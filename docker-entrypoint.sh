@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-/usr/local/bin/get-backup.sh
+set -e
 
+/usr/local/bin/get-backup.sh
+#!/usr/bin/env bash
+set -Eeo pipefail
 # TODO swap to -Eeuo pipefail above (after handling all potentially-unset variables)
 
 # usage: file_env VAR [DEFAULT]
